@@ -13,10 +13,10 @@ body{   background:url("smu-campus.jpg");
 		background-size: 100%;
 }
 	h1      {
-			color:blue;
+			color:red;
 			position:absolute;
-			left: 950px;
-			top: 150px;
+			left: 100px;
+			top: 0px;
 
 	}
 	p       {
@@ -40,10 +40,10 @@ Your browser does not support the HTML5 canvas tag.</canvas>
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
 ctx.beginPath();
-ctx.arc(1000, 400, 125, 0, 1 * Math.PI);
-ctx.lineTo(875,150);
-ctx.arc(1000, 150, 125, 1 * Math.PI, 0);
-ctx.lineTo(1125,400);
+ctx.arc(1000, 400, 100, 0, 1 * Math.PI);
+ctx.lineTo(900,150);
+ctx.arc(1000, 150, 100, 1 * Math.PI, 0);
+ctx.lineTo(1100,400);
 ctx.closePath();
 ctx.lineWidth = 3;
 ctx.strokeStyle = "#87CEFA"
@@ -53,11 +53,8 @@ ctx.stroke();
 
 </script>
 
-<input type="button" name="Login" value="Login" style="position: absolute; left: 985px; top: 250px; " onClick="alert('login currently down')" />
+<input type="button" name="Sign Up" value="Sign Up" style="position: absolute; left: 980px; top: 250px; " onClick="alert('Sign up currently unavailable')" />
 
-<p>The Goal of my project will list assignments and projects for my various classes.
-The main users will be students trying to keep track of their assignments
-In addtion I will put due dates for each project and various weights of each assignment on my grade for the class.</p>
-<h1> Sign-up</h1>
+<h1> Keep track of your assignments and progress throughout your semester!</h1>
 </body>
 </html>
