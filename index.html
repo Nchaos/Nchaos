@@ -1,2 +1,63 @@
-hello world
+<!DOCTYPE html>
+<html>
 
+
+<head>
+<title>
+Assignment Tracker
+</title>
+<style>
+body{   background:url("smu-campus.jpg");
+        background-color:lightblue;
+		background-repeat:no-repeat;
+		background-size: 100%;
+}
+	h1      {
+			color:blue;
+			position:absolute;
+			left: 950px;
+			top: 150px;
+
+	}
+	p       {
+			position: absolute;
+			color:green;
+			left: 0px;
+			top: 710px;
+	}
+
+</style>
+</head>
+
+<body>
+
+
+<canvas id="myCanvas" width="1500" height="800" style="border:0px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+
+<script>
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(1000, 400, 125, 0, 1 * Math.PI);
+ctx.lineTo(875,150);
+ctx.arc(1000, 150, 125, 1 * Math.PI, 0);
+ctx.lineTo(1125,400);
+ctx.closePath();
+ctx.lineWidth = 3;
+ctx.strokeStyle = "#87CEFA"
+ctx.fillStyle = "#87CEFA";
+ctx.fill();
+ctx.stroke();
+
+</script>
+
+<input type="button" name="Login" value="Login" style="position: absolute; left: 985px; top: 250px; " onClick="alert('login currently down')" />
+
+<p>The Goal of my project will list assignments and projects for my various classes.
+The main users will be students trying to keep track of their assignments
+In addtion I will put due dates for each project and various weights of each assignment on my grade for the class.</p>
+<h1> Sign-up</h1>
+</body>
+</html>
