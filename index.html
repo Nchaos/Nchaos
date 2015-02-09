@@ -7,54 +7,37 @@
 Assignment Tracker
 </title>
 <style>
-body{   background:url("smu-campus.jpg");
-        background-color:lightblue;
-		background-repeat:no-repeat;
-		background-size: 100%;
-}
+body
 	h1      {
 			color:red;
 			position:absolute;
-			left: 100px;
-			top: 0px;
+			left: 890px;
+			top: 90px;
 
 	}
 	p       {
 			position: absolute;
 			color:green;
-			left: 0px;
-			top: 710px;
+			left: 900px;
+			top: 275px;
 	}
-
 </style>
 </head>
 
 <body>
 
-
 <canvas id="myCanvas" width="1500" height="800" style="border:0px solid #d3d3d3;">
 Your browser does not support the HTML5 canvas tag.</canvas>
 
-<script>
 
-var c = document.getElementById("myCanvas");
-var ctx = c.getContext("2d");
-ctx.beginPath();
-ctx.arc(1000, 400, 100, 0, 1 * Math.PI);
-ctx.lineTo(900,150);
-ctx.arc(1000, 150, 100, 1 * Math.PI, 0);
-ctx.lineTo(1100,400);
-ctx.closePath();
-ctx.lineWidth = 3;
-ctx.strokeStyle = "#87CEFA"
-ctx.fillStyle = "#87CEFA";
-ctx.fill();
-ctx.stroke();
+<!-- 
+<input type="button" name="Sign Up" value="Sign Up" style="position: absolute; left: 980px; top: 300px; " onClick="alert('Sign up currently unavailable')" />
+ -->
 
-</script>
 
-<input type="button" name="Sign Up" value="Sign Up" style="position: absolute; left: 980px; top: 250px; " onClick="alert('Sign up currently unavailable')" />
-
-<h1> Keep track of your assignments and progress throughout your semester!</h1>
+<h1> <center>Keep track of <br>your assignments <br> and progress <br>throughout the<br> semester!</center></h1>
 </body>
+
+<script type="text/javascript" src="a4.js"></script>
+
 </html>
