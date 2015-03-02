@@ -7,7 +7,11 @@
 Assignment Tracker
 </title>
 <style>
-body
+body{	background:url("smu-campus.jpg");
+		background-color:lightblue;
+		background-repeat:no-repeat;
+		background-size: 100%;
+}
 	h1      {
 			color:red;
 			position:absolute;
@@ -31,14 +35,32 @@ body
 Your browser does not support the HTML5 canvas tag.</canvas>
 
 
+
 <!-- 
 <input type="button" name="Sign Up" value="Sign Up" style="position: absolute; left: 980px; top: 300px; " onClick="alert('Sign up currently unavailable')" />
  -->
 
 
 <h1> Keep track of <br>your assignments <br> and progress <br>throughout the<br> semester!</h1>
-</body>
 
-<script language="javascript" type="text/javascript" src="a4.js"></script>
+<script language="javascript" type="text/javascript">
+
+
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(1000, 400, 125, 0, 1 * Math.PI);
+ctx.lineTo(875,150);
+ctx.arc(1000, 150, 125, 1 * Math.PI, 0);
+ctx.lineTo(1125,400);
+ctx.closePath();
+ctx.lineWidth = 3;
+ctx.strokeStyle = "#87CEFA"
+ctx.fillStyle = "#87CEFA";
+ctx.fill();
+ctx.stroke();
+
+</script>
+</body>
 
 </html>
