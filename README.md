@@ -8,3 +8,7 @@ The Goal of my project will list assignments and projects for my various classes
 # Apiary
 
 http://docs.testapi881.apiary.io/#
+
+http://private-f907e-testapi881.apiary-mock.com/Users
+
+http://private-f907e-testapi881.apiary-mock.com/Users/1
