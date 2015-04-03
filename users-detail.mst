@@ -2,5 +2,7 @@
   <li><a href="#users">Users</a></li>
   <li class="active">{{user.name}}</li>
 </ol>
-<h1>{{ user.name }}</h1>
-<p>{{ user.major }}</p>
+<h1> Name: {{ user.name }}</h1>
+<h2> Major: {{ user.major }}<br>
+GPA: {{ user.GPA }}<br>
+Email: {{ user.Email }}</h2>

@@ -1,0 +1,5 @@
+<ul style="list-style:none; margin-top:20px">
+{{#users}}
+    <li><h3><a href="#users-{{id}}">{{name}}</a></h3><li>
+{{/users}}
+</ul>

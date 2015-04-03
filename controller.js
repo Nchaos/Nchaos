@@ -25,6 +25,20 @@ $.get('users-detail.mst', function(template) {
     });
 }
 
+function createuser() {
+$.get('users-list.mst', function(template) {
+    $.getJSON(
+        'http://private-f907e-testapi881.apiary-mock.com/Users', 
+        {}, 
+        function(json, textStatus) {
+            var data = {"users":json};
+            console.log(data);
+            var rendered = Mustache.render(template,data);
+            $('#body').html(rendered);
+        });
+    });
+}
+
 function hashAction(){
     var numberPattern = /users-\d+/g;
     var userId = location.hash.match( numberPattern );
@@ -41,14 +55,15 @@ function hashAction(){
           //do something else
           loadusers();
         break;
-        case '#Documentation':
-          $("#body").text("Use another apiary endpoint to create a blog");
+        case '#About':
+          $("#body").text("This website is design for users to keep track of they're progress throughtout their semester by calculating they're current grades using their syllabus for grade percentages and their earn grades on assignments");
         break;
-        case '#Example':
-          $("#body").text("Blank");
+        case '#New User':
+          //Create a new user
+          createuser();
         break;
-        case '#page5':
-          $("#body").text("empty");
+        case '#Other':
+          $("#body").text("Work in Progress!");
         break;
         default:
           location.hash = "home";
@@ -62,9 +77,9 @@ $(function(){
                 "nav":[
                     {"title":"Home", "href":"home"},
                     {"title":"Users", "href": "users"},
-                    {"title":"Documentation", "href": "Documentation"},
-                    {"title":"Example","href": "Example"},
-                    {"title":"page5", "href": "page5"}
+                    {"title":"About", "href": "About"},
+                    {"title":"New User", "href": "New User"},
+                    {"title":"Other", "href": "Other"}
                     ]
                 };
     var rendered = Mustache.render(template,data);

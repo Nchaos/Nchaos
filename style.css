@@ -1,9 +1,9 @@
 
 body 	{
-		background:url("smu-campus.jpg");
+		background:url("pen_background.jpg");
 		background-color:lightblue;
 		background-repeat:no-repeat;
-		background-size: 100%;
+		background-size: cover;
 	}
 	
 h1  {
@@ -14,5 +14,17 @@ h1  {
 	}
 p   {
 		position: absolute;
-		color:green;
+		right: 75em;
+		top:10em;
+		color:red;
 	}
+
+h2 {
+		color:blue;
+		position:fixed;
+		vertical-align:middle;
+		left: 5em;
+		top:5em;
+}
+
+
