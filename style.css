@@ -1,0 +1,18 @@
+
+body 	{
+		background:url("smu-campus.jpg");
+		background-color:lightblue;
+		background-repeat:no-repeat;
+		background-size: 100%;
+	}
+	
+h1  {
+		color:red;
+		position:absolute;
+		vertical-align:middle;
+
+	}
+p   {
+		position: absolute;
+		color:green;
+	}

@@ -1,66 +1,26 @@
-<!DOCTYPE html>
 <html>
 
-
 <head>
-<title>
-Assignment Tracker
-</title>
-<style>
-body{	background:url("smu-campus.jpg");
-		background-color:lightblue;
-		background-repeat:no-repeat;
-		background-size: 100%;
-}
-	h1      {
-			color:red;
-			position:absolute;
-			vertical-align:middle;
-			left: 890px;
-			top: 90px;
+<title>Assignment Tracker</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" media = "screen" href="style.css">
 
-	}
-	p       {
-			position: absolute;
-			color:green;
-			left: 900px;
-			top: 275px;
-	}
-</style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.8.1/mustache.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="controller.js"></script>
 </head>
 
 <body>
-
-<canvas id="myCanvas" width="1500" height="800" style="border:0px solid #d3d3d3;">
-Your browser does not support the HTML5 canvas tag.</canvas>
-
-
-
-<!-- 
-<input type="button" name="Sign Up" value="Sign Up" style="position: absolute; left: 980px; top: 300px; " onClick="alert('Sign up currently unavailable')" />
- -->
+	<div id="header"></div>
+	<div id="navigation"></div>
+	<div class="container">
+    	<div id="body">Please enable javascript</div>
+	</div>
+<div id="footer"></div>
 
 
-<h1> Keep track of <br>your assignments <br> and progress <br>throughout the<br> semester!</h1>
-
-<script language="javascript" type="text/javascript">
-
-
-var c = document.getElementById("myCanvas");
-var ctx = c.getContext("2d");
-ctx.beginPath();
-ctx.arc(1000, 400, 125, 0, 1 * Math.PI);
-ctx.lineTo(875,150);
-ctx.arc(1000, 150, 125, 1 * Math.PI, 0);
-ctx.lineTo(1125,400);
-ctx.closePath();
-ctx.lineWidth = 3;
-ctx.strokeStyle = "#87CEFA"
-ctx.fillStyle = "#87CEFA";
-ctx.fill();
-ctx.stroke();
-
-</script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </body>
 
 </html>
