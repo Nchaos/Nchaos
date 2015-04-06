@@ -1,0 +1,8 @@
+<ol class="breadcrumb">
+  <li><a href="#users">Users</a></li>
+  <li class="active">{{user.name}}</li>
+</ol>
+<h1> Name: {{ user.name }}</h1>
+<h2> Major: {{ user.major }}<br>
+GPA: {{ user.GPA }}<br>
+Email: {{ user.Email }}</h2>
