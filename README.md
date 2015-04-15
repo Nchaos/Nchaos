@@ -12,3 +12,8 @@ http://docs.testapi881.apiary.io/#
 http://private-f907e-testapi881.apiary-mock.com/Users
 
 http://private-f907e-testapi881.apiary-mock.com/Users/1
+
+# Assignment 7
+
+Username: Admin
+password: password
