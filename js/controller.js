@@ -58,9 +58,9 @@ function hashAction(){
         case '#About':
           $("#body").text("This website is design for users to keep track of they're progress throughtout their semester by calculating they're current grades using their syllabus for grade percentages and their earn grades on assignments");
         break;
-        case '#New User':
+        case '#Existing User':
           //Create a new user
-          createuser();
+          window.location.href = "Login.html";
         break;
         case '#Other':
           $("#body").text("Work in Progress!");
@@ -78,7 +78,7 @@ $(function(){
                     {"title":"Home", "href":"home"},
                     {"title":"Users", "href": "users"},
                     {"title":"About", "href": "About"},
-                    {"title":"New User", "href": "New User"},
+                    {"title":"Existing User", "href": "Existing User"},
                     {"title":"Other", "href": "Other"}
                     ]
                 };
