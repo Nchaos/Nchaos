@@ -1,0 +1,66 @@
+
+body 	{
+		background:url("../img/pen_background.jpg");
+		background-color:lightblue;
+		background-repeat:no-repeat;
+		background-size: cover;
+		text-align: center;
+    	padding: 0 25px;
+	}
+	
+h1  {
+		color:red;
+		position:absolute;
+		vertical-align:middle;
+
+	}
+p   {
+		position: absolute;
+		right: 75em;
+		top:10em;
+		color:red;
+	}
+
+h2 {
+		color:blue;
+		position:fixed;
+		vertical-align:middle;
+		left: 5em;
+		top:5em;
+}
+
+#main {
+    width: 500px;
+    margin: auto;
+    text-align: left;
+    background: white;
+    padding: 50px 60px;
+    border: solid #ddd;
+    border-width: 0 1px 1px 1px;
+}
+
+#main h1 {
+    margin-top: 0;
+    font-size: 35px;
+}
+
+#main ul {
+    padding-left: 20px;
+}
+
+#main .error {
+    border: 1px solid red;
+    background: #FDEFF0;
+    padding: 20px;
+}
+
+#main .success {
+    margin-top: 25px;
+}
+
+#main .success code {
+    font-size: 12px;
+    color: green;
+    line-height: 13px;
+}
+
