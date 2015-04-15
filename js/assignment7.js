@@ -185,11 +185,12 @@ $(document).ready(function(){
     //     alert("Error: " + error.code + " " + error.message);
     //   }
     // });
-    testPostUserToParse($("#signupUsername").val() , $("#signupPassword").val() $("#signupEmail").val());
 
   })
 });
-//testPostUserToParse("nchaos", "password", "nhchao@smu.edu");
+
+
+//testPostUserToParse("admin", "password", "admin@smu.edu");
 
 
 $( document ).ready( function() {

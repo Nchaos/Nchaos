@@ -78,7 +78,7 @@ $(function(){
                     {"title":"Home", "href":"home"},
                     {"title":"Users", "href": "users"},
                     {"title":"About", "href": "About"},
-                    {"title":"New User", "href": "Existing User"},
+                    {"title":"Existing User", "href": "Existing User"},
                     {"title":"Other", "href": "Other"}
                     ]
                 };
