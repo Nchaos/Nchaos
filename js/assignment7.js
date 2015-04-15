@@ -171,7 +171,25 @@ function testPostUserToParse(username, password, email) {
 
 }
 
-testPostUserToParse("nchaos", "password", "nhchao@smu.edu");
+$(document).ready(function(){
+  $('#signUpForm').submit( function(event) {
+
+    // testPostUserToParse($("#signupUsername").val() , $("#signupPassword").val() $("#signupEmail").val(), {
+    //         success: function(user) {
+    //     alert("Success!!!");
+    //     // redirect to main
+    //     //window.location.replace("admin.html");
+    //   },
+    //   error: function(user, error) {
+    //     // Show the error message somewhere and let the user try again.
+    //     alert("Error: " + error.code + " " + error.message);
+    //   }
+    // });
+    testPostUserToParse($("#signupUsername").val() , $("#signupPassword").val() $("#signupEmail").val());
+
+  })
+});
+//testPostUserToParse("nchaos", "password", "nhchao@smu.edu");
 
 
 $( document ).ready( function() {
