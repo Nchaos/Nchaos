@@ -178,7 +178,7 @@ $(document).ready(function(){
     //         success: function(user) {
     //     alert("Success!!!");
     //     // redirect to main
-    //     //window.location.replace("admin.html");
+    //     //window.location.replace("Admin.html");
     //   },
     //   error: function(user, error) {
     //     // Show the error message somewhere and let the user try again.
@@ -202,7 +202,7 @@ $( document ).ready( function() {
       success: function(user) {
         alert("Success!!!");
         // redirect to main
-        window.location.replace("admin.html");
+        window.location.replace("Admin.html");
       },
       error: function(user, error) {
         // Show the error message somewhere and let the user try again.
