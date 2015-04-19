@@ -154,7 +154,12 @@ function testPostUserToParse(username, password, email) {
   alert("Assignment 7: testPostToParse function called. Look in console for output");
   console.log("testPostToParse output");
 
-  
+  var username = $('#signupUsername').val();
+  var email = $('#signupEmail').val();
+  var password = $('#signupPassword').val();
+
+
+
   var user = new Parse.User();
   user.set("username", username);
   user.set("password", password);
@@ -212,3 +217,8 @@ $( document ).ready( function() {
   }); // end of login function
 });
 
+
+function logoutUser() {
+  Parse.User.logOut();
+  window.location.replace("index.html");
+}
